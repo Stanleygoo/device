@@ -10,16 +10,16 @@
     <a class="logo" href="index.html">Device</a>
   </h1>
   <div class="row  container">
-    <form class="half-row" action="#" method="get">
-      <input class="search" type="search" placeholder="Поиск по сайту">
-      <button class="search-button" type="submit">Найти</button>
-    </form>
     <div class="half-row">
-      <div class="user-block">
-        <a class="user-block__link  user-block__link--login" href="#">Войти</a>
-        <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
-        <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
-      </div>
+      <form action="#" method="get">
+        <input class="search" type="search" placeholder="Поиск по сайту">
+        <button class="search-button" type="submit">Найти</button>
+      </form>
+    </div>
+    <div class="user-block">
+      <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+      <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
+      <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
     </div>
   </div>
   <div class="row  container">
@@ -66,61 +66,52 @@
         <span class="sliders-goods__control"></span>
       </div>
       <div class="slider  slider--first">
-        <div>
-          <img src="img/selfie-stick.png" width="500" height="500" alt="Фото самой длинной селфи-палки">
-        </div>
-        <div>
-          <h2>Делай селфи, как Бен Стиллер!</h2>
-          <P>Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</P>
-          <a href="#">Подробнее</a>
-          <ul>
-            <li>
-              <span>8,5&nbsp;м</span>
-              <span>Длина палки</span>
+        <div class="slider__description">
+          <h2 class="slider__title">Делай селфи, как Бен Стиллер!</h2>
+          <p class="slider__text">Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</p>
+          <a class="slider__button" href="#">Подробнее</a>
+          <ul class="slider__param-list">
+            <li class="slider__param-item">
+              <span class="slider__big-text">8,5&nbsp;м</span>
+              <span class="slider__small-text">Длина палки</span>
             </li>
-            <li>
-              <span>5&nbsp;кг</span>
-              <span>Вес палки</span>
+            <li class="slider__param-item">
+              <span class="slider__big-text">5&nbsp;кг</span>
+              <span class="slider__small-text">Вес палки</span>
             </li>
-            <li>
-              <span>Карбон</span>
-              <span>Материал</span>
+            <li class="slider__param-item">
+              <span class="slider__big-text">Карбон</span>
+              <span class="slider__small-text">Материал</span>
             </li>
           </ul>
         </div>
       </div>
       <div class="slider  slider--second">
-        <div>
-          <img src="img/fitness-watch.png" width="500" height="500" alt="Фото фитнесс-браслета">
-        </div>
-        <div>
-          <h2>Худеем правильно!</h2>
-          <P>Мотивирующие фитнесс-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</P>
-          <a href="#">Подробнее</a>
-          <ul>
-            <li>
-              <span>48&nbsp;часов</span>
-              <span>Без подзарядки</span>
+        <div class="slider__description">
+          <h2 class="slider__title">Худеем правильно!</h2>
+          <p class="slider__text">Мотивирующие фитнесс-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
+          <a class="slider__button" href="#">Подробнее</a>
+          <ul class="slider__param-list">
+            <li class="slider__param-item">
+              <span class="slider__big-text">48&nbsp;часов</span>
+              <span class="slider__small-text">Без подзарядки</span>
             </li>
           </ul>
         </div>
       </div>
       <div class="slider  slider--third">
-        <div>
-          <img src="img/quadrocopter.png" width="500" height="500" alt="Фото квадрокоптера">
-        </div>
-        <div>
-          <h2>Порхает как бабочка, жалит как пчела!</h2>
-          <P>Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</P>
-          <a href="#">Подробнее</a>
-          <ul>
-            <li>
-              <span>800&nbsp;м</span>
-              <span>Дальность полета</span>
+        <div class="slider__description">
+          <h2 class="slider__title">Порхает как бабочка, жалит как пчела!</h2>
+          <p class="slider__text">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="slider__button" href="#">Подробнее</a>
+          <ul class="slider__param-list">
+            <li class="slider__param-item">
+              <span class="slider__big-text">800&nbsp;м</span>
+              <span class="slider__small-text">Дальность полета</span>
             </li>
-            <li>
-              <span>50&nbsp;м</span>
-              <span>Радиус поражения</span>
+            <li class="slider__param-item">
+              <span class="slider__big-text">50&nbsp;м</span>
+              <span class="slider__small-text">Радиус поражения</span>
             </li>
           </ul>
         </div>
@@ -202,24 +193,12 @@
   </div>
   <div class="container">
     <div class="partners">
-      <div class="partners__logo-container">
-        <img class="partners__logo" src="img/dji.jpg" width="260" height="100" alt="DJI">
-        <img class="partners__logo  partners__logo--grayscale" src="img/dji--gray.jpg" width="260" height="100" alt="DJI grayscale">
-      </div>
-      <div class="partners__logo-container">
-        <img class="partners__logo" src="img/sp-gadjets.jpg" width="260" height="100" alt="SP Gadjets">
-        <img class="partners__logo  partners__logo--grayscale" src="img/sp-gadjets--gray.jpg" width="260" height="100" alt="SP Gadjets grayscale">
-      </div>
-      <div class="partners__logo-container">
-        <img class="partners__logo" src="img/gopro.jpg" width="260" height="100" alt="GoPro">
-        <img class="partners__logo  partners__logo--grayscale" src="img/gopro--gray.jpg" width="260" height="100" alt="GoPro grayscale">
-      </div>
-      <div class="partners__logo-container">
-        <img class="partners__logo" src="img/vive.jpg" width="260" height="100" alt="Vive">
-        <img class="partners__logo  partners__logo--grayscale" src="img/vive--gray.jpg" width="260" height="100" alt="Vive grayscale">
-      </div>
+      <div class="partners__logo  partners__logo--dji">DJI</div>
+      <div class="partners__logo  partners__logo--sp-gadjets">SP Gadjets</div>
+      <div class="partners__logo  partners__logo--gopro">GoPro</div>
+      <div class="partners__logo  partners__logo--vive">Vive</div>
     </div>
-    <div class="info">
+    <section class="info">
       <div class="info__block">
         <h2 class="info__title">О нас</h2>
         <p class="info__text">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
@@ -239,16 +218,16 @@
         </div>
         <a class="info__link" href="#">Напишите нам</a>
       </div>
-    </div>
+    </section>
   </div>
 </main>
 <footer class="main-footer  container">
   <div class="row">
-    <a class="logo  logo--footer" href="index.html">Device</a>
-    <div class="user-block  userblock--footer">
-      <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+    <div class="logo-container">
+      <a class="logo  logo--footer" href="index.html">Device</a>
     </div>
     <div class="user-block  userblock--footer">
+      <a class="user-block__link  user-block__link--login" href="#">Войти</a>
       <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
       <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
     </div>

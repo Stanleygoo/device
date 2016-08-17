@@ -10,16 +10,16 @@
     <a class="logo" href="index.html">Device</a>
   </div>
   <div class="row  container">
-    <form class="half-row" action="#" method="get">
-      <input class="search" type="search" placeholder="Поиск по сайту">
-      <button class="search-button" type="submit">Найти</button>
-    </form>
     <div class="half-row">
-      <div class="user-block">
-        <a class="user-block__link  user-block__link--login" href="#">Войти</a>
-        <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
-        <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
-      </div>
+      <form action="#" method="get">
+        <input class="search" type="search" placeholder="Поиск по сайту">
+        <button class="search-button" type="submit">Найти</button>
+      </form>
+    </div>
+    <div class="user-block">
+      <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+      <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
+      <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
     </div>
   </div>
   <div class="row  container">
@@ -67,11 +67,11 @@
     </ul>
   </div>
   <div class="container  container--full-width">
-    <div class="sort-container">
-      <form class="sort" action="#" method="post">
-        <div class="sort__subtitle">
-          <span class="section-subtitle">Фильтр:</span>
-        </div>
+    <div class="sort">
+      <div class="sort__subtitle">
+        <span class="section-subtitle">Фильтр:</span>
+      </div>
+      <form action="#" method="post">
         <fieldset class="sort__block">
           <legend class="sort__subtitle">Стоимость</legend>
           <div class="range-filter">
@@ -133,65 +133,73 @@
       <div class="sort-type">
         <span class="section-subtitle">Сортировка:</span>
         <ul class="sort-type__list">
-          <li class="sort-type__item"><a href="#">По&nbsp;цене</a></li>
+          <li class="sort-type__item  sort-type__item--active"><a href="#">По&nbsp;цене</a></li>
           <li class="sort-type__item"><a href="#">По&nbsp;типу</a></li>
           <li class="sort-type__item"><a href="#">По&nbsp;популярности</a></li>
         </ul>
         <div class="sort-type__direction">
           <a class="sort-type__direction-link  sort-type__direction-link--up" href="#">Up</a>
-          <a class="sort-type__direction-link  sort-type__direction-link--down" href="#">Down</a>
+          <a class="sort-type__direction-link  sort-type__direction-link--down  sort-type__direction-link--active" href="#">Down</a>
         </div>
       </div>
       <div class="result__list">
         <article class="item-cart">
-          <div class="item-cart__actions">
-            <a class="item-cart__button" href="#">В&nbsp;корзину</a>
-            <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
-          </div>
-          <div class="item-cart__image-container">
-            <img class="item-cart__image" src="img/selfie-stick1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
+          <div class="item-cart__image-box">
+            <div class="item-cart__actions">
+              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
+            </div>
+            <div class="item-cart__image-container">
+              <img class="item-cart__image" src="img/selfie-stick1.jpg" width="360" height="380" alt="Фото любительской селфи-палки">
+            </div>
           </div>
           <div class="item-cart__text-container">
-            <span class="item-cart__text">Любительская селфи-палка</span>
+            <a class="item-cart__link" href="#">Любительская селфи-палка</a>
             <span class="item-cart__price">500&nbsp;руб.</span>
           </div>
         </article>
         <article class="item-cart">
-          <div class="item-cart__actions">
-            <a class="item-cart__button" href="#">В&nbsp;корзину</a>
-            <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
-          </div>
-          <div class="item-cart__image-container">
-            <img class="item-cart__image" src="img/selfie-stick2.jpg" width="360" height="380" alt="Фото профессиональной селфи-палки">
+          <div class="item-cart__image-box">
+            <div class="item-cart__actions">
+              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
+            </div>
+            <div class="item-cart__image-container">
+              <img class="item-cart__image" src="img/selfie-stick2.jpg" width="360" height="380" alt="Фото профессиональной селфи-палки">
+            </div>
           </div>
           <div class="item-cart__text-container">
-            <span class="item-cart__text">Профессиональная селфи-палка</span>
+            <a class="item-cart__link" href="#">Профессиональная селфи-палка</a>
             <span class="item-cart__price">1&nbsp;500&nbsp;руб.</span>
           </div>
         </article>
         <article class="item-cart">
-          <div class="item-cart__actions">
-            <a class="item-cart__button" href="#">В&nbsp;корзину</a>
-            <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
-          </div>
-          <div class="item-cart__image-container">
-            <img class="item-cart__image" src="img/selfie-stick3.jpg" width="360" height="380" alt="Фото непотопляемой селфи-палки">
+          <div class="item-cart__image-box">
+            <div class="item-cart__actions">
+              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
+            </div>
+            <div class="item-cart__image-container">
+              <img class="item-cart__image" src="img/selfie-stick3.jpg" width="360" height="380" alt="Фото непотопляемой селфи-палки">
+            </div>
           </div>
           <div class="item-cart__text-container">
-            <span class="item-cart__text">Непотопляемая селфи-палка</span>
+            <a class="item-cart__link" href="#">Непотопляемая селфи-палка</a>
             <span class="item-cart__price">2&nbsp;500&nbsp;руб.</span>
           </div>
         </article>
         <article class="item-cart">
-          <div class="item-cart__actions">
-            <a class="item-cart__button" href="#">В&nbsp;корзину</a>
-            <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
-          </div>
-          <div class="item-cart__image-container">
-            <img class="item-cart__image" src="img/selfie-stick4.jpg" width="360" height="380" alt="Фото селфи-палки «Следуй за мной»">
+          <div class="item-cart__image-box">
+            <div class="item-cart__actions">
+              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
+            </div>
+            <div class="item-cart__image-container">
+              <img class="item-cart__image" src="img/selfie-stick4.jpg" width="360" height="380" alt="Фото селфи-палки «Следуй за мной»">
+            </div>
           </div>
           <div class="item-cart__text-container">
-            <span class="item-cart__text">Селфи-палка &laquo;Следуй за&nbsp;мной&raquo;</span>
+            <a class="item-cart__link" href="#">Селфи-палка &laquo;Следуй за&nbsp;мной&raquo;</a>
             <span class="item-cart__price">4&nbsp;900&nbsp;руб.</span>
           </div>
         </article>
@@ -210,11 +218,11 @@
 </main>
 <footer class="main-footer  container">
   <div class="row">
-    <a class="logo  logo--footer" href="index.html">Device</a>
-    <div class="user-block  userblock--footer">
-      <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+    <div class="logo-container">
+      <a class="logo  logo--footer" href="index.html">Device</a>
     </div>
     <div class="user-block  userblock--footer">
+      <a class="user-block__link  user-block__link--login" href="#">Войти</a>
       <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
       <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
     </div>
