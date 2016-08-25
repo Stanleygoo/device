@@ -1,0 +1,27 @@
+body {
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  font-weight: 300;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.title,
+.slider__title,
+.services__title,
+.info__title {
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+}
+
+.section-subtitle,
+.sort-type__subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+}
