@@ -6,27 +6,27 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
-  <div class="container">
+<div class="container">
+  <header class="main-header">
     <div class="row">
       <a class="logo-link" href="index.html">
         <img class="logo-image" src="img/logo.png" width="163" height="36" alt="Device logo">
       </a>
     </div>
-    <div class="row">
+    <div class="row  clearfix">
       <div class="half-row">
         <form action="#" method="get">
           <input class="search" type="search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
       </div>
-      <div class="user-block">
-        <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+      <div class="user-block  clearfix">
+        <a class="user-block__link  user-block__link--login" href="#"><span class="user-block__user-name">Валентин Петухов</span>Выйти</a>
         <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
         <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
       </div>
     </div>
-    <div class="row">
+    <div class="row  clearfix">
       <div class="half-row">
         <div class="dropdown">
           <a class="dropdown__submenu-link" href="#">Каталог товаров</a>
@@ -47,15 +47,15 @@
         </div>
       </div>
       <nav class="half-row">
-        <ul class="navigation  navigation--left">
+        <ul class="navigation  navigation--left  clearfix">
           <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
-  </div>
-</header>
+  </header>
+</div>
 <main>
   <div class="container">
     <h1 class="title">Моноподы для селфи</h1>
@@ -65,9 +65,9 @@
       <li class="breadcrumbs__item  breadcrumbs__item--active">Моноподы для селфи</li>
     </ul>
   </div>
-  <div class="catalog">
+  <div class="catalog  clearfix">
     <div class="sort">
-      <div class="sort__subtitle">
+      <div class="subtitle-container">
         <span class="section-subtitle">Фильтр:</span>
       </div>
       <div class="sort__form-container">
@@ -219,9 +219,9 @@
 </main>
 <footer class="main-footer">
   <div class="container">
-    <div class="row">
+    <div class="row  clearfix">
       <div class="logo-container">
-        <a class="logo-link" href="index.html">
+        <a class="logo-link  logo-link--footer" href="index.html">
           <img class="logo-image  logo-image--footer" src="img/logo--footer.png" width="163" height="36" alt="Device footer logo">
         </a>
       </div>
@@ -231,7 +231,7 @@
         <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
       </div>
     </div>
-    <div class="row">
+    <div class="row  row--inline-blocks  clearfix">
       <p class="company-address">г. Москва, ул. Строителей, 15</p>
       <ul class="navigation  navigation--center">
         <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
@@ -240,8 +240,7 @@
       </ul>
       <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
-    <div class="row">
-      <span class="horisontal-line"></span>
+    <div class="row  row--inline-blocks  clearfix">
       <ul class="social">
         <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
         <li class="social__item"><a class="social__link  social__link--instagram" href="#">Instagram</a></li>

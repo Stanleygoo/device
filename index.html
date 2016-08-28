@@ -6,27 +6,27 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
-  <div class="container">
+<div class="container">
+  <header class="main-header">
     <div class="row">
       <a class="logo-link" href="index.html">
         <img class="logo-image" src="img/logo.png" width="163" height="36" alt="Device logo">
       </a>
     </div>
-    <div class="row">
+    <div class="row  clearfix">
       <div class="half-row">
         <form action="#" method="get">
           <input class="search" type="search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
       </div>
-      <div class="user-block">
+      <div class="user-block  clearfix">
         <a class="user-block__link  user-block__link--login" href="#">Войти</a>
         <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
         <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
       </div>
     </div>
-    <div class="row">
+    <div class="row  clearfix">
       <div class="half-row">
         <div class="dropdown">
           <a class="dropdown__submenu-link" href="#">Каталог товаров</a>
@@ -47,15 +47,15 @@
         </div>
       </div>
       <nav class="half-row">
-        <ul class="navigation  navigation--left">
+        <ul class="navigation  clearfix">
           <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
-  </div>
-</header>
+  </header>
+</div>
 <main>
   <div class="container">
     <div class="sliders-goods">
@@ -119,44 +119,44 @@
     <div class="popular">
       <a class="popular__link" href="#">
         <div class="popular__image-container">
-          <img class="popular__image" src="img/popular-1.png" width="97" height="55" alt="Популярные товары - виртуальная реальность">
+          <img class="popular__image" src="img/popular-1.png" width="160" height="160" alt="Популярные товары - виртуальная реальность">
         </div>
         <span class="popular__text">Виртуальная реальность</span>
       </a>
       <a class="popular__link" href="#">
         <div class="popular__image-container">
-          <img class="popular__image" src="img/popular-2.png" width="86" height="117" alt="Популярные товары - моноподы для селфи">
+          <img class="popular__image" src="img/popular-2.png" width="160" height="160" alt="Популярные товары - моноподы для селфи">
         </div>
         <span class="popular__text">Моноподы для&nbsp;селфи</span>
       </a>
       <a class="popular__link" href="#">
         <div class="popular__image-container">
-          <img class="popular__image" src="img/popular-3.png" width="71" height="87" alt="Популярные товары - экшн-камеры">
+          <img class="popular__image" src="img/popular-3.png" width="160" height="160" alt="Популярные товары - экшн-камеры">
         </div>
         <span class="popular__text">Экшн-камеры</span>
       </a>
       <a class="popular__link" href="#">
         <div class="popular__image-container">
-          <img class="popular__image" src="img/popular-4.png" width="107" height="65" alt="Популярные товары - фитнесс браслеты">
+          <img class="popular__image" src="img/popular-4.png" width="160" height="160" alt="Популярные товары - фитнесс браслеты">
         </div>
         <span class="popular__text">Фитнесс браслеты</span>
       </a>
       <a class="popular__link" href="#">
         <div class="popular__image-container">
-          <img class="popular__image" src="img/popular-5.png" width="56" height="98" alt="Популярные товары - умные часы">
+          <img class="popular__image" src="img/popular-5.png" width="160" height="160" alt="Популярные товары - умные часы">
         </div>
         <span class="popular__text">Умные часы</span>
       </a>
       <a class="popular__link" href="#">
         <div class="popular__image-container">
-          <img class="popular__image" src="img/popular-6.png" width="132" height="69" alt="Популярные товары - квадрокоптеры">
+          <img class="popular__image" src="img/popular-6.png" width="160" height="160" alt="Популярные товары - квадрокоптеры">
         </div>
         <span class="popular__text">Квадрокоптеры</span>
       </a>
     </div>
   </div>
   <div class="full-width">
-    <div class="container">
+    <div class="container  clearfix">
       <div class="services">
         <ul class="services__controls">
           <li class="services__control  slider-services__control--active">Доставка</li>
@@ -185,7 +185,7 @@
       <a class="partners__logo  partners__logo--gopro" href="#">GoPro</a>
       <a class="partners__logo  partners__logo--vive" href="#">Vive</a>
     </div>
-    <section class="info">
+    <section class="info  clearfix">
       <div class="info__block">
         <h2 class="info__title">О нас</h2>
         <p class="info__text">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
@@ -199,9 +199,9 @@
       <div class="info__block">
         <h2 class="info__title">Контакты</h2>
         <p class="info__text">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div class="info__map-container">
+        <a class="info__map-container" href="#">
           <img class="info__map" src="img/map.jpg" width="560" height="222" alt="Карта как нас найти">
-        </div>
+        </a>
       </div>
       <div class="info__links">
         <div class="info__half-row">
@@ -216,9 +216,9 @@
 </main>
 <footer class="main-footer">
   <div class="container">
-    <div class="row">
+    <div class="row  clearfix">
       <div class="logo-container">
-        <a class="logo-link" href="index.html">
+        <a class="logo-link  logo-link--footer" href="index.html">
           <img class="logo-image  logo-image--footer" src="img/logo--footer.png" width="163" height="36" alt="Device footer logo">
         </a>
       </div>
@@ -228,7 +228,7 @@
         <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
       </div>
     </div>
-    <div class="row">
+    <div class="row  row--inline-blocks  clearfix">
       <p class="company-address">г. Москва, ул. Строителей, 15</p>
       <ul class="navigation  navigation--center">
         <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
@@ -237,8 +237,7 @@
       </ul>
       <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
-    <div class="row">
-      <span class="horisontal-line"></span>
+    <div class="row  row--inline-blocks  clearfix">
       <ul class="social">
         <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
         <li class="social__item"><a class="social__link  social__link--instagram" href="#">Instagram</a></li>
