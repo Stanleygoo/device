@@ -171,7 +171,7 @@ main {
   z-index: 1;
 }
 
-.dropdown__submenu-link:hover + .dropdown__submenu {
+.dropdown:hover .dropdown__submenu {
   display: block;
 }
 
