@@ -20,8 +20,8 @@
           <button class="search-button" type="submit">Найти</button>
         </form>
       </div>
-      <div class="user-block  clearfix">
-        <a class="user-block__link  user-block__link--login" href="#"><span class="user-block__user-name">Валентин Петухов</span>Выйти</a>
+      <div class="user-block">
+        <a class="user-block__link  user-block__link--login" href="#">Войти</a>
         <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
         <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
       </div>
@@ -33,7 +33,7 @@
           <div class="dropdown__submenu">
             <ul class="dropdown__list">
               <li class="dropdown__item"><a class="dropdown__link" href="#">Виртуальная реальность</a></li>
-              <li class="dropdown__item"><a class="dropdown__link  dropdown__link--active">Моноподы для селфи</a></li>
+              <li class="dropdown__item"><a class="dropdown__link">Моноподы для селфи</a></li>
               <li class="dropdown__item"><a class="dropdown__link" href="#">Экшн-камеры</a></li>
             </ul>
             <ul class="dropdown__list">
@@ -47,7 +47,7 @@
         </div>
       </div>
       <nav class="half-row">
-        <ul class="navigation  navigation--left  clearfix">
+        <ul class="navigation">
           <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
@@ -62,18 +62,34 @@
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
       <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
-      <li class="breadcrumbs__item  breadcrumbs__item--active">Моноподы для селфи</li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Моноподы для селфи</a></li>
     </ul>
   </div>
-  <div class="catalog  clearfix">
-    <div class="sort  clearfix">
-      <div class="subtitle-container">
-        <span class="section-subtitle">Фильтр:</span>
+  <div class="catalog-header">
+    <div class="container  clearfix">
+      <div class="filter-title">
+        <div class="section-subtitle">Фильтр:</div>
       </div>
-      <div class="sort__form-container">
+      <div class="sort">
+        <div class="section-subtitle">Сортировка:</div>
+        <ul class="sort__list">
+          <li class="sort__item"><a class="sort__link  sort__link--active">По&nbsp;цене</a></li>
+          <li class="sort__item"><a class="sort__link" href="#">По&nbsp;типу</a></li>
+          <li class="sort__item"><a class="sort__link" href="#">По&nbsp;популярности</a></li>
+        </ul>
+        <div class="sort__direction">
+          <a class="sort__direction-link  sort__direction-link--up" href="#">Up</a>
+          <a class="sort__direction-link  sort__direction-link--down  sort__direction-link--active" href="#">Down</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="catalog">
+    <div class="container  clearfix">
+      <div class="filter">
         <form action="#" method="post">
-          <fieldset class="sort__block">
-            <legend class="sort__subtitle">Стоимость</legend>
+          <fieldset class="filter__block">
+            <legend class="filter__subtitle">Стоимость</legend>
             <div class="range-filter">
               <div class="range-filter__scale">
                 <div class="range-filter__bar"></div>
@@ -83,73 +99,57 @@
             </div>
             <div class="price-filter">
               <label class="price-filter__label" for="price-filter__from">от</label>
-              <input class="price-filter__input" id="price-filter__from" type="text">
+              <input class="price-filter__input" id="price-filter__from" type="text" placeholder="0">
               <label class="price-filter__label" for="price-filter__to">до</label>
-              <input class="price-filter__input" id="price-filter__to" type="text">
+              <input class="price-filter__input" id="price-filter__to" type="text" placeholder="5000">
             </div>
           </fieldset>
-          <fieldset class="sort__block">
-            <legend class="sort__subtitle">Цвет</legend>
-            <ul class="sort__list">
-              <li class="sort__list-item">
-                <input class="sort__input" id="color-black" type="checkbox" name="color-black" value="color-black" checked>
-                <label class="sort__text  sort__text--checkbox" for="color-black">Черный</label>
+          <fieldset class="filter__block">
+            <legend class="filter__subtitle">Цвет</legend>
+            <ul class="filter__list">
+              <li class="filter__list-item">
+                <input class="filter__input" id="color-black" type="checkbox" name="color-black" value="color-black" checked>
+                <label class="filter__text  filter__text--checkbox" for="color-black">Черный</label>
               </li>
               <li class="sort__list-item">
-                <input class="sort__input" id="color-white" type="checkbox" name="color-white" value="color-white">
-                <label class="sort__text  sort__text--checkbox" for="color-white">Белый</label>
+                <input class="filter__input" id="color-white" type="checkbox" name="color-white" value="color-white">
+                <label class="filter__text  filter__text--checkbox" for="color-white">Белый</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="filter__input" id="color-blue" type="checkbox" name="color-blue" value="color-blue" checked>
+                <label class="filter__text  filter__text--checkbox" for="color-blue">Синий</label>
               </li>
               <li class="sort__list-item">
-                <input class="sort__input" id="color-blue" type="checkbox" name="color-blue" value="color-blue" checked>
-                <label class="sort__text  sort__text--checkbox" for="color-blue">Синий</label>
+                <input class="filter__input" id="color-red" type="checkbox" name="color-red" value="color-red" checked>
+                <label class="filter__text  filter__text--checkbox" for="color-red">Красный</label>
               </li>
-              <li class="sort__list-item">
-                <input class="sort__input" id="color-red" type="checkbox" name="color-red" value="color-red" checked>
-                <label class="sort__text  sort__text--checkbox" for="color-red">Красный</label>
-              </li>
-              <li class="sort__list-item">
-                <input class="sort__input" id="color-pink" type="checkbox" name="color-pink" value="color-pink">
-                <label class="sort__text  sort__text--checkbox" for="color-pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="sort__block">
-            <legend class="sort__subtitle">Bluetooth</legend>
-            <ul class="sort__list">
-              <li class="sort__list-item">
-                <input class="sort__input" id="bluetooth-yes" type="radio" name="bluetooth" value="yes" checked>
-                <label class="sort__text  sort__text--radio" for="bluetooth-yes">Черный</label>
-              </li>
-              <li class="sort__list-item">
-                <input class="sort__input" id="bluetooth-no" type="radio" name="bluetooth" value="no">
-                <label class="sort__text  sort__text--radio" for="bluetooth-no">Белый</label>
+              <li class="filter__list-item">
+                <input class="filter__input" id="color-pink" type="checkbox" name="color-pink" value="color-pink">
+                <label class="filter__text  filter__text--checkbox" for="color-pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <fieldset class="filter__block">
+            <legend class="filter__subtitle">Bluetooth</legend>
+            <ul class="filter__list">
+              <li class="filter__list-item">
+                <input class="filter__input" id="bluetooth-yes" type="radio" name="bluetooth" value="yes" checked>
+                <label class="filter__text  filter__text--radio" for="bluetooth-yes">Есть</label>
+              </li>
+              <li class="filter__list-item">
+                <input class="filter__input" id="bluetooth-no" type="radio" name="bluetooth" value="no">
+                <label class="filter__text  filter__text--radio" for="bluetooth-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button  button--for-button" type="submit">Показать</button>
         </form>
       </div>
-    </div>
-    <div class="result">
-      <div class="result__sort">
-        <div class="sort-type  clearfix">
-          <span class="sort-type__subtitle">Сортировка:</span>
-          <ul class="sort-type__list">
-            <li class="sort-type__item  sort-type__item--active"><a href="#">По&nbsp;цене</a></li>
-            <li class="sort-type__item"><a href="#">По&nbsp;типу</a></li>
-            <li class="sort-type__item"><a href="#">По&nbsp;популярности</a></li>
-          </ul>
-          <div class="sort-type__direction">
-            <a class="sort-type__direction-link  sort-type__direction-link--up" href="#">Up</a>
-            <a class="sort-type__direction-link  sort-type__direction-link--down  sort-type__direction-link--active" href="#">Down</a>
-          </div>
-        </div>
-      </div>
-      <div class="result__list">
+      <div class="result">
         <article class="item-cart">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="button" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -164,7 +164,7 @@
         <article class="item-cart">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="button" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -179,7 +179,7 @@
         <article class="item-cart">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="button" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -191,10 +191,10 @@
             <span class="item-cart__price">2&nbsp;500&nbsp;руб.</span>
           </div>
         </article>
-        <article class="item-cart">
+        <article class="item-cart  item-cart--new">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="item-cart__button" href="#">В&nbsp;корзину</a>
+              <a class="button" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -225,22 +225,22 @@
           <img class="logo-image  logo-image--footer" src="img/logo--footer.png" width="163" height="36" alt="Device footer logo">
         </a>
       </div>
-      <div class="user-block  userblock--footer">
+      <div class="user-block  user-block--footer">
         <a class="user-block__link  user-block__link--login" href="#">Войти</a>
         <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
         <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
       </div>
     </div>
-    <div class="row  row--inline-blocks  clearfix">
+    <div class="row  row--flex">
       <p class="company-address">г. Москва, ул. Строителей, 15</p>
-      <ul class="navigation  navigation--center">
+      <ul class="navigation  navigation--footer">
         <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
       </ul>
       <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
-    <div class="row  row--inline-blocks  clearfix">
+    <div class="row  row--flex">
       <ul class="social">
         <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
         <li class="social__item"><a class="social__link  social__link--instagram" href="#">Instagram</a></li>
