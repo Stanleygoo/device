@@ -88,8 +88,8 @@
     <div class="container  clearfix">
       <div class="filter">
         <form action="#" method="post">
-          <fieldset class="filter__block">
-            <legend class="filter__subtitle">Стоимость</legend>
+          <div class="filter__block">
+            <div class="filter__subtitle">Стоимость</div>
             <div class="range-filter">
               <div class="range-filter__scale">
                 <div class="range-filter__bar"></div>
@@ -99,13 +99,13 @@
             </div>
             <div class="price-filter">
               <label class="price-filter__label" for="price-filter__from">от</label>
-              <input class="price-filter__input" id="price-filter__from" type="text" placeholder="0">
+              <input class="price-filter__input" id="price-filter__from" type="text" value="0">
               <label class="price-filter__label" for="price-filter__to">до</label>
-              <input class="price-filter__input" id="price-filter__to" type="text" placeholder="5000">
+              <input class="price-filter__input" id="price-filter__to" type="text" value="5000">
             </div>
-          </fieldset>
-          <fieldset class="filter__block">
-            <legend class="filter__subtitle">Цвет</legend>
+          </div>
+          <div class="filter__block">
+            <div class="filter__subtitle">Цвет</div>
             <ul class="filter__list">
               <li class="filter__list-item">
                 <input class="filter__input" id="color-black" type="checkbox" name="color-black" value="color-black" checked>
@@ -128,9 +128,9 @@
                 <label class="filter__text  filter__text--checkbox" for="color-pink">Розовый</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="filter__block">
-            <legend class="filter__subtitle">Bluetooth</legend>
+          </div>
+          <div class="filter__block">
+            <div class="filter__subtitle">Bluetooth</div>
             <ul class="filter__list">
               <li class="filter__list-item">
                 <input class="filter__input" id="bluetooth-yes" type="radio" name="bluetooth" value="yes" checked>
@@ -141,7 +141,7 @@
                 <label class="filter__text  filter__text--radio" for="bluetooth-no">Нет</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
           <button class="button  button--for-button" type="submit">Показать</button>
         </form>
       </div>

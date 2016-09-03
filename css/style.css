@@ -56,6 +56,7 @@ main {
   padding: 11px 0;
   color: #000000;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.2em;
@@ -148,6 +149,7 @@ main {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -216,7 +218,7 @@ main {
   line-height: 56px;
   letter-spacing: 0.01em;
   color: #000000;
-  font-weight: 900;
+  font-weight: 400;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 }
 
@@ -226,14 +228,16 @@ main {
   line-height: 19px;
   letter-spacing: 0.2em;
   color: #000000;
-  font-weight: 900;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 .sliders-goods {
   position: relative;
   width: 1160px;
-  min-height: 486px;
+}
+
+.slider {
   padding: 0 60px;
   padding-left: 600px;
 }
@@ -298,6 +302,7 @@ main {
 
 .popular {
   font-size: 0;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -322,8 +327,10 @@ main {
 .popular__text {
   display: block;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.01em;
   color: #000000;
 }
 
@@ -356,6 +363,7 @@ main {
 
 .partners {
   font-size: 0;
+  letter-spacing: 0;
 }
 
 .partners__logo {
@@ -431,6 +439,7 @@ main {
   position: relative;
   padding-left: 35px;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -513,6 +522,7 @@ main {
 .sort__list {
   list-style: none;
   font-size: 0;
+  letter-spacing: 0;
 }
 
 .sort__item {
@@ -529,7 +539,6 @@ main {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  letter-spacing: 0;
   color: #000000;
   text-decoration: none;
   opacity: 0.3;
@@ -577,6 +586,7 @@ main {
   font-size: 18px;
   line-height: 22px;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 .filter__list {
@@ -652,6 +662,7 @@ main {
   font-size: 14px;
   line-height: 22px;
   font-family: "Gilroy Light", "Arial", sans-serif;
+  font-weight: 400;
   letter-spacing: 0;
   color: #000000;
   opacity: 0.2;
@@ -669,6 +680,8 @@ main {
   padding: 40px;
   padding-left: 72px;
   padding-right: 0;
+  font-size: 0;
+  letter-spacing: 0;
   background-color: #ffffff;
 }
 
@@ -722,6 +735,8 @@ main {
   font-size: 14px;
   line-height: 20px;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  letter-spacing: 0.05em;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;
@@ -744,6 +759,7 @@ main {
   vertical-align: top;
   font-size: 13px;
   line-height: 36px;
+  letter-spacing: 0.01em;
   text-decoration: none;
   color: #000000;
   opacity: 0.5;
@@ -765,6 +781,8 @@ main {
   font-size: 18px;
   line-height: 22px;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: #000000;
   text-decoration: none;
 }
@@ -777,6 +795,8 @@ main {
   font-size: 16px;
   line-height: 19px;
   font-family: "Gilroy Light", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   text-align: right;
 }
 
@@ -797,6 +817,7 @@ main {
   line-height: 19px;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   color: #000000;
+  font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
@@ -905,6 +926,7 @@ main {
   width: 960px;
   height: 553px;
   background-color: #ffffff;
+  letter-spacing: 0;
   outline: 1px solid green; /* Временно */
 }
 
@@ -945,6 +967,7 @@ main {
 .write-us__label {
   display: block;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 18px;
 }
