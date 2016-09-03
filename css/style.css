@@ -986,6 +986,7 @@ main {
 .write-us__input--textarea {
   width: 100%;
   border: none;
+  resize: none;
 }
 
 
