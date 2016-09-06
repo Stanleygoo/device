@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
   <header class="main-header">
     <div class="row">
-      <a class="logo-link" href="index.html">
+      <a class="logo-link">
         <img class="logo-image" src="img/logo.png" width="163" height="36" alt="Device logo">
       </a>
     </div>
     <div class="row  clearfix">
       <div class="half-row">
-        <form action="#" method="get">
-          <input class="search" type="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">Найти</button>
-        </form>
+        <div class="search-form">
+          <form action="#" method="get">
+            <input class="search" type="search" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+        </div>
       </div>
       <div class="user-block">
         <a class="user-block__link  user-block__link--login" href="#">Войти</a>
@@ -59,10 +62,13 @@
 <main>
   <div class="container">
     <div class="sliders-goods">
+      <input class="sliders-goods__control-input" type="radio" id="button-slider-1" name="toggle-slides" checked>
+      <input class="sliders-goods__control-input" type="radio" id="button-slider-2" name="toggle-slides">
+      <input class="sliders-goods__control-input" type="radio" id="button-slider-3" name="toggle-slides">
       <div class="sliders-goods__controls">
-        <span class="sliders-goods__control"></span>
-        <span class="sliders-goods__control"></span>
-        <span class="sliders-goods__control"></span>
+        <label class="sliders-goods__control" for="button-slider-1">Показать первый слайд</label>
+        <label class="sliders-goods__control" for="button-slider-2">Показать второй слайд</label>
+        <label class="sliders-goods__control" for="button-slider-3">Показать третий слайд</label>
       </div>
       <div class="slider  slider--first">
         <div class="slider__content">
@@ -157,21 +163,24 @@
   </div>
   <div class="services">
     <div class="container  clearfix">
-      <ul class="services__controls">
-        <li class="services__control  slider-services__control--active">Доставка</li>
-        <li class="services__control">Гарантия</li>
-        <li class="services__control">Кредит</li>
-      </ul>
+      <input class="services__control-input" type="radio" id="button-services-1" name="toggle-services" checked>
+      <input class="services__control-input" type="radio" id="button-services-2" name="toggle-services">
+      <input class="services__control-input" type="radio" id="button-services-3" name="toggle-services">
+      <div class="services__controls">
+        <label class="button  button--services" for="button-services-1">Доставка</label>
+        <label class="button  button--services" for="button-services-2">Гарантия</label>
+        <label class="button  button--services" for="button-services-3">Кредит</label>
+      </div>
       <div class="services__slider  services__slider-first">
-        <h2 class="services__title">Доставка</h2>
+        <h2 class="title  title--services">Доставка</h2>
         <p class="services__text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
       </div>
       <div class="services__slider  services__slider-second">
-        <h2 class="services__title">Гарантия</h2>
+        <h2 class="title  title--services">Гарантия</h2>
         <p class="services__text">Если из-за возгарания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
       </div>
       <div class="services__slider  services__slider-third">
-        <h2 class="services__title">Кредит</h2>
+        <h2 class="title  title--services">Кредит</h2>
         <p class="services__text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
       </div>
     </div>
@@ -183,23 +192,25 @@
       <a class="partners__logo  partners__logo--gopro" href="#">GoPro</a>
       <a class="partners__logo  partners__logo--vive" href="#">Vive</a>
     </div>
-    <section class="info  clearfix">
-      <div class="info__block">
-        <h2 class="info__title">О нас</h2>
-        <p class="info__text">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
-        <p class="info__text">Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
-        <ul class="info__list">
-          <li class="info__list-item">Деловые Линии</li>
-          <li class="info__list-item">Автотрейдинг</li>
-          <li class="info__list-item">ЖелДорЭкспедиция</li>
-        </ul>
-      </div>
-      <div class="info__block">
-        <h2 class="info__title">Контакты</h2>
-        <p class="info__text">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a class="info__map-container" href="#">
-          <img class="info__map" src="img/map.jpg" width="560" height="222" alt="Карта как нас найти">
-        </a>
+    <section class="info">
+      <div class="clearfix">
+        <div class="info__block">
+          <h2 class="title  title--info">О нас</h2>
+          <p class="info__text">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
+          <p class="info__text">Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
+          <ul class="info__list">
+            <li class="info__list-item">Деловые Линии</li>
+            <li class="info__list-item">Автотрейдинг</li>
+            <li class="info__list-item">ЖелДорЭкспедиция</li>
+          </ul>
+        </div>
+        <div class="info__block">
+          <h2 class="title  title--info">Контакты</h2>
+          <p class="info__text">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="info__map-container" href="#">
+            <img class="info__map" src="img/map.jpg" width="560" height="222" alt="Карта как нас найти">
+          </a>
+        </div>
       </div>
       <div class="info__links  clearfix">
         <div class="info__half-row">
@@ -216,7 +227,7 @@
   <div class="container">
     <div class="row  clearfix">
       <div class="logo-container">
-        <a class="logo-link  logo-link--footer" href="index.html">
+        <a class="logo-link  logo-link--footer">
           <img class="logo-image  logo-image--footer" src="img/logo--footer.png" width="163" height="36" alt="Device footer logo">
         </a>
       </div>
@@ -235,7 +246,7 @@
       </ul>
       <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
-    <div class="row  row--flex">
+    <div class="row  row--flex  row--block-in-corner">
       <ul class="social">
         <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
         <li class="social__item"><a class="social__link  social__link--instagram" href="#">Instagram</a></li>
@@ -246,7 +257,7 @@
   </div>
 </footer>
 <div class="write-us">
-  <button type="button" class="write-us__close">Закрыть</button>
+  <button type="button" class="popup-close">Закрыть</button>
   <form action="#" method="post">
     <div class="write-us__row">
       <div class="write-us__half-row">
@@ -262,6 +273,9 @@
     <textarea class="write-us__input  write-us__input--textarea" id="email-text" name="email-text" cols="50" rows="8" placeholder="В свободной форме"></textarea>
     <button class="button  button--for-button" type="submit">Отправить</button>
   </form>
+</div>
+<div class="popup-map">
+  <button type="button" class="popup-close">Закрыть</button>
 </div>
 </body>
 </html>

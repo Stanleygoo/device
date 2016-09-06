@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Девайс - Моноподы для селфи</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -15,13 +16,16 @@
     </div>
     <div class="row  clearfix">
       <div class="half-row">
-        <form action="#" method="get">
-          <input class="search" type="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">Найти</button>
-        </form>
+        <div class="search-form">
+          <form action="#" method="get">
+            <input class="search" type="search" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+        </div>
       </div>
       <div class="user-block">
-        <a class="user-block__link  user-block__link--login" href="#">Войти</a>
+        <a class="user-block__link  user-block__link--login" href="#">Валентин Петухов</a>
+        <a class="user-block__link  user-block__link--logout" href="#">Выйти</a>
         <a class="user-block__link  user-block__link--compare" href="#">Сравнить</a>
         <a class="user-block__link  user-block__link--basket" href="#">Корзина</a>
       </div>
@@ -37,7 +41,7 @@
               <li class="dropdown__item"><a class="dropdown__link" href="#">Экшн-камеры</a></li>
             </ul>
             <ul class="dropdown__list">
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Фитнесс-браслеты</a></li>
+              <li class="dropdown__item"><a class="dropdown__link" href="#">Фитнес-браслеты</a></li>
               <li class="dropdown__item"><a class="dropdown__link" href="#">Умные часы</a></li>
             </ul>
             <ul class="dropdown__list">
@@ -58,7 +62,7 @@
 </div>
 <main>
   <div class="container">
-    <h1 class="title">Моноподы для селфи</h1>
+    <h1 class="title  title--catalog">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
       <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
@@ -92,7 +96,7 @@
             <div class="filter__subtitle">Стоимость</div>
             <div class="range-filter">
               <div class="range-filter__scale">
-                <div class="range-filter__bar"></div>
+                <div class="range-filter__bar" style="margin-left: 0; width: 116px"></div>
               </div>
               <div class="range-filter__toggle  range-filter__toggle--min"></div>
               <div class="range-filter__toggle  range-filter__toggle--max"></div>
@@ -111,7 +115,7 @@
                 <input class="filter__input" id="color-black" type="checkbox" name="color-black" value="color-black" checked>
                 <label class="filter__text  filter__text--checkbox" for="color-black">Черный</label>
               </li>
-              <li class="sort__list-item">
+              <li class="filter__list-item">
                 <input class="filter__input" id="color-white" type="checkbox" name="color-white" value="color-white">
                 <label class="filter__text  filter__text--checkbox" for="color-white">Белый</label>
               </li>
@@ -119,7 +123,7 @@
                 <input class="filter__input" id="color-blue" type="checkbox" name="color-blue" value="color-blue" checked>
                 <label class="filter__text  filter__text--checkbox" for="color-blue">Синий</label>
               </li>
-              <li class="sort__list-item">
+              <li class="filter__list-item">
                 <input class="filter__input" id="color-red" type="checkbox" name="color-red" value="color-red" checked>
                 <label class="filter__text  filter__text--checkbox" for="color-red">Красный</label>
               </li>
@@ -149,7 +153,7 @@
         <article class="item-cart">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="button" href="#">В&nbsp;корзину</a>
+              <a class="button  button--to-basket" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -164,7 +168,7 @@
         <article class="item-cart">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="button" href="#">В&nbsp;корзину</a>
+              <a class="button  button--to-basket" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -179,7 +183,7 @@
         <article class="item-cart">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="button" href="#">В&nbsp;корзину</a>
+              <a class="button  button--to-basket" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -194,7 +198,7 @@
         <article class="item-cart  item-cart--new">
           <div class="item-cart__image-box">
             <div class="item-cart__actions">
-              <a class="button" href="#">В&nbsp;корзину</a>
+              <a class="button  button--to-basket" href="#">В&nbsp;корзину</a>
               <a class="item-cart__compare-link" href="#">Добавить к&nbsp;сравнению</a>
             </div>
             <div class="item-cart__image-container">
@@ -240,7 +244,7 @@
       </ul>
       <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
-    <div class="row  row--flex">
+    <div class="row  row--flex  row--block-in-corner">
       <ul class="social">
         <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
         <li class="social__item"><a class="social__link  social__link--instagram" href="#">Instagram</a></li>
