@@ -145,13 +145,8 @@ main {
 
 .button--services {
   cursor: pointer;
-  width: 280px;
-  padding-right: 120px;
-  margin-bottom: 24px;
-}
-
-.button--services::after {
   width: 160px;
+  margin-bottom: 24px;
 }
 
 .button--to-basket {
@@ -200,6 +195,7 @@ main {
   border-bottom: 2px solid #000000;
 }
 
+.search-button:active,
 .search:focus + .search-button {
   display: inline-block;
   vertical-align: bottom;
@@ -240,6 +236,7 @@ main {
 
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
 }
 
 .search-button:focus {
@@ -360,10 +357,10 @@ main {
   top: 30px;
   left: -60px;
   width: 1160px;
-  padding: 21px 60px 31px 60px;
+  padding: 21px 60px 11px 60px;
   background-color: #f7e296;
   font-size: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 .dropdown:hover .dropdown__submenu {
@@ -376,6 +373,7 @@ main {
   list-style: none;
   padding-left: 0;
   margin-right: 59px;
+  margin-bottom: 20px;
 }
 
 .dropdown__list:nth-child(2) {
@@ -502,7 +500,7 @@ main {
   padding: 43px 60px 25px 599px;
   min-height: 486px;
   background-color: #ffffff;
-  z-index: -1;
+  z-index: 1;
 }
 
 .slider--first {
@@ -573,7 +571,7 @@ main {
   font-size: 0;
   letter-spacing: 0;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sliders-goods__control {
@@ -676,6 +674,7 @@ main {
   vertical-align: top;
   width: 160px;
   margin-right: 40px;
+  margin-bottom: 40px;
   text-decoration: none;
 }
 
@@ -709,7 +708,7 @@ main {
 }
 
 .services {
-  margin-top: 185px;
+  margin-top: 145px;
   margin-bottom: 94px;
   padding-bottom: 73px;
   background-color: #e5e5e5;
@@ -1114,7 +1113,7 @@ main {
   width: 16px;
   height: 16px;
   top: 0;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.75);
 }
 
 .range-filter__toggle--min {
@@ -1660,7 +1659,7 @@ main {
   display: none;
   position: relative;
   width: 960px;
-  height: 553px;
+  min-height: 553px;
   background-color: #ffffff;
   letter-spacing: 0;
 }
@@ -1703,7 +1702,7 @@ main {
 .write-us form {
   margin: auto;
   width: 840px;
-  padding: 90px 40px;
+  padding: 95px 40px 75px 40px;
 }
 
 .write-us__row {
@@ -1723,6 +1722,8 @@ main {
 
 .write-us__label {
   display: block;
+  margin-top: 1px;
+  margin-bottom: 10px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -1732,16 +1733,25 @@ main {
 .write-us__input {
   background-color: #f2f2f2;
   width: 100%;
-  padding: 20px;
+  padding: 15px 20px 17px 20px;
+  margin-bottom: 35px;
   border: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  color: rgba(70, 70, 70, 0.4);
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
   letter-spacing: 0;
+}
+
+.write-us__input:focus {
+  outline: none;
 }
 
 .write-us__input--textarea {
   width: 100%;
+  height: 156px;
+  margin-bottom: 32px;
   border: none;
   resize: none;
 }
