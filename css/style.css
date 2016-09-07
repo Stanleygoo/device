@@ -47,6 +47,25 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* Анимации */
+
+@keyframes shake {
+  0%, 100% { transform: translateY(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
+  20%, 40%, 60%, 80% { transform: translateY(10px); }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Общие классы */
 
 main {
@@ -167,6 +186,10 @@ main {
   background-color: transparent;
   border: none;
   width: 200px;
+}
+
+.button--for-button:focus {
+  outline: none;
 }
 
 .button--services {
@@ -1731,12 +1754,13 @@ main {
   left: 50vw;
   width: 960px;
   min-height: 553px;
+  margin-top: -277px;
+  margin-left: -480px;
   background-color: #ffffff;
   letter-spacing: 0;
   box-shadow:
     0 10px 20px 0 rgba(4, 6, 6, 0.2),
     0 20px 40px 0 rgba(4, 6, 6, 0.75);
-  transform: translate(-50%, -50%);
   z-index: 100;
 }
 
@@ -1810,9 +1834,20 @@ main {
   left: 50vw;
   width: 960px;
   height: 559px;
+  margin-top: -280px;
+  margin-left: -480px;
   background: #e9e9e9 url("../img/map--big.jpg") 0 0 no-repeat;
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
-  transform: translate(-50%, -50%);
   z-index: 100;
 }
 
+/* классы для JS */
+
+.show-popup {
+  display: block;
+  animation: up 0.4s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
+}
