@@ -1816,3 +1816,12 @@ main {
   z-index: 100;
 }
 
+/* классы для JS */
+
+.show-popup {
+  display: block;
+}
+
+.popup-error {
+  color: red;
+}
