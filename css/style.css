@@ -95,6 +95,32 @@ main {
   margin-right: 0;
 }
 
+.logo {
+  width: 163px;
+  height: 36px;
+  fill: #000000;
+}
+
+.logo:hover {
+  fill: #464646;
+}
+
+.logo:active{
+  fill: #666666;
+}
+
+.logo--footer {
+  fill: #f7e184;
+}
+
+.logo--footer:hover {
+  fill: #f0c52e;
+}
+
+.logo--footer:active{
+  opacity: 0.3;
+}
+
 .button {
   display: inline-block;
   position: relative;
@@ -154,6 +180,42 @@ main {
   margin-bottom: 6px;
 }
 
+.popup-close {
+  position: absolute;
+  top: 21px;
+  right: 22px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f7e296;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.popup-close::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 12px;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 26px;
+  width: 2px;
+  height: 30px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
 /* Шапка сайта */
 
 .main-header {
@@ -168,6 +230,11 @@ main {
   height: 36px;
   transform: translateY(-19px);
   margin-bottom: 4px;
+}
+
+.logo-link--footer {
+  transform: translateY(0);
+  margin-bottom: 0;
 }
 
 .search {
@@ -782,7 +849,7 @@ main {
 }
 
 .partners {
-  margin-bottom: 93px;
+  margin-bottom: 53px;
   font-size: 0;
   letter-spacing: 0;
 }
@@ -793,6 +860,7 @@ main {
   width: 260px;
   height: 100px;
   margin-right: 40px;
+  margin-bottom: 40px;
   font-size: 0;
   background-color: #ffffff;
 }
@@ -1481,11 +1549,6 @@ main {
   height: 36px;
 }
 
-.logo-link--footer {
-  transform: translateY(0);
-  margin-bottom: 0;
-}
-
 .user-block--footer {
   float: right;
 }
@@ -1664,41 +1727,6 @@ main {
   letter-spacing: 0;
 }
 
-.popup-close {
-  position: absolute;
-  top: 21px;
-  right: 22px;
-  display: block;
-  width: 55px;
-  height: 55px;
-  border: none;
-  border-radius: 50%;
-  background-color: #f7e296;
-  font-size: 0;
-}
-
-.popup-close::before {
-  content: "";
-  position: absolute;
-  top: 26px;
-  left: 12px;
-  width: 30px;
-  height: 2px;
-  background-color: #ffffff;
-  transform: rotate(45deg);
-}
-
-.popup-close::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 26px;
-  width: 2px;
-  height: 30px;
-  background-color: #ffffff;
-  transform: rotate(45deg);
-}
-
 .write-us form {
   margin: auto;
   width: 840px;
@@ -1756,11 +1784,13 @@ main {
   resize: none;
 }
 
+/* Всплывающее окно с картой */
+
 .popup-map {
   display: none;
   position: relative;
   width: 960px;
   height: 559px;
-  background-color: #e9e9e9;
+  background: #e9e9e9 url("../img/map--big.jpg") 0 0 no-repeat;
 }
 
