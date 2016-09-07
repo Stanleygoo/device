@@ -106,14 +106,62 @@
   background-position: -5px -424px;
 }
 
+.sprite-logo-dji {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -446px;
+}
+
+.sprite-logo-dji--grayscale {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -556px;
+}
+
+.sprite-logo-gopro {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -666px;
+}
+
+.sprite-logo-gopro--grayscale {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -776px;
+}
+
 .sprite-logo-htmlacademy {
   width: 27px;
   height: 34px;
-  background-position: -5px -446px;
+  background-position: -5px -886px;
 }
 
 .sprite-logo-htmlacademy--hover {
   width: 27px;
   height: 34px;
-  background-position: -5px -490px;
+  background-position: -5px -930px;
+}
+
+.sprite-logo-spgadgets {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -974px;
+}
+
+.sprite-logo-spgadgets---grayscale {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -1084px;
+}
+
+.sprite-logo-vive {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -1194px;
+}
+
+.sprite-logo-vive--grayscale {
+  width: 260px;
+  height: 100px;
+  background-position: -5px -1304px;
 }

@@ -863,24 +863,29 @@ main {
   margin-right: 40px;
   margin-bottom: 40px;
   font-size: 0;
-  background-color: #ffffff;
+  background: #ffffff url("../img/sprite.png") 50% 50% no-repeat;
+  opacity: 0.2;
 }
 
-.partners__logo--dji { background: #ffffff url("../img/logo-dji--grayscale.jpg") no-repeat 50% 50%;}
+.partners__logo:hover {
+  opacity: 1;
+}
 
-.partners__logo--dji:hover { background: #ffffff url("../img/logo-dji.jpg") no-repeat 50% 50%;}
+.partners__logo--dji { background-position: -5px -556px;}
 
-.partners__logo--sp-gadjets { background: #ffffff url("../img/logo-spgadgets--grayscale.jpg") no-repeat 50% 50%;}
+.partners__logo--dji:hover { background-position: -5px -446px;}
 
-.partners__logo--sp-gadjets:hover { background: #ffffff url("../img/logo-spgadgets.jpg") no-repeat 50% 50%;}
+.partners__logo--sp-gadjets { background-position: -5px -1084px;}
 
-.partners__logo--gopro { background: #ffffff url("../img/logo-gopro--grayscale.jpg") no-repeat 50% 50%;}
+.partners__logo--sp-gadjets:hover { background-position: -5px -974px;}
 
-.partners__logo--gopro:hover { background: #ffffff url("../img/logo-gopro.jpg") no-repeat 50% 50%;}
+.partners__logo--gopro { background-position: -5px -776px;}
 
-.partners__logo--vive { background: #ffffff url("../img/logo-vive--grayscale.jpg") no-repeat 50% 50%;}
+.partners__logo--gopro:hover { background-position: -5px -666px;}
 
-.partners__logo--vive:hover { background: #ffffff url("../img/logo-vive.jpg") no-repeat 50% 50%;}
+.partners__logo--vive { background-position: -5px -1304px;}
+
+.partners__logo--vive:hover { background-position: -5px -1194px;}
 
 .partners__logo:nth-child(4n) {
   margin-right: 0;
@@ -1706,11 +1711,11 @@ main {
   width: 27px;
   height: 34px;
   font-size: 0;
-  background: url(../img/sprite.png) -5px -446px no-repeat;
+  background: url(../img/sprite.png) -5px -886px no-repeat;
 }
 
 .copyright:hover {
-  background-position: -5px -490px;
+  background-position: -5px -930px;
 }
 
 .copyright:active {
