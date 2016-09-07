@@ -32,6 +32,8 @@ writeUsOpen.addEventListener("click", function(event) {
 form.addEventListener("submit", function(event) {
   if (!fieldUserName.value || !fieldUserEmail.value) {
     event.preventDefault();
+    writeUs.classList.remove("popup-error");
+    writeUs.offsetWidth = writeUs.offsetWidth;
     writeUs.classList.add("popup-error");
   } else {
     localStorage.setItem("userName", fieldUserName.value);

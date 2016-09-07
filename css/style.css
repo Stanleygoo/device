@@ -47,6 +47,14 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* Анимации */
+
+@keyframes shake {
+  0%, 100% { transform: translateY(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateY(-10px); }
+  20%, 40%, 60%, 80% { transform: translateY(10px); }
+}
+
 /* Общие классы */
 
 main {
@@ -167,6 +175,10 @@ main {
   background-color: transparent;
   border: none;
   width: 200px;
+}
+
+.button--for-button:focus {
+  outline: none;
 }
 
 .button--services {
@@ -1731,12 +1743,13 @@ main {
   left: 50vw;
   width: 960px;
   min-height: 553px;
+  margin-top: -277px;
+  margin-left: -480px;
   background-color: #ffffff;
   letter-spacing: 0;
   box-shadow:
     0 10px 20px 0 rgba(4, 6, 6, 0.2),
     0 20px 40px 0 rgba(4, 6, 6, 0.75);
-  transform: translate(-50%, -50%);
   z-index: 100;
 }
 
@@ -1823,5 +1836,5 @@ main {
 }
 
 .popup-error {
-  color: red;
+  animation: shake 0.6s;
 }
