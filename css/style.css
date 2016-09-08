@@ -368,19 +368,20 @@ main {
   float: right;
   width: 500px;
   margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  text-align: right;
+  font-size: 0;
+  letter-spacing: 0;
 }
 
 .user-block__link {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   padding-left: 26px;
   margin-right: 37px;
+  font-size: 15px;
   line-height: 36px;
+  letter-spacing: 0.01em;
   color: #000000;
   text-decoration: none;
 }
@@ -400,16 +401,14 @@ main {
 }
 
 .user-block__link--login {
+  float: left;
   margin-right: 20px;
 }
 
 .user-block__link--logout {
+  float: left;
   padding-left: 0;
   opacity: 0.3;
-}
-
-.user-block__link--compare {
-  margin-left: auto;
 }
 
 .user-block__link::before {
@@ -1640,11 +1639,8 @@ main {
 }
 
 .user-block--footer .user-block__link--login {
+  float: none;
   margin-right: 36px;
-}
-
-.user-block--footer .user-block__link--compare {
-  margin-left: inherit;
 }
 
 .user-block--footer .user-block__link--login::before {
