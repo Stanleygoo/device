@@ -1538,24 +1538,40 @@ main {
 }
 
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin-top: 18px;
   margin-bottom: 33px;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  padding: 0;
+  text-align: center;
+  font-size: 0;
+  letter-spacing: 0;
   list-style: none;
   background-color: #ebebeb;
-  padding: 0;
 }
 
 .pagination__item {
+  display: inline-block;
+  vertical-align: baseline;
   margin-right: 25px;
+  margin-top: 25px;
+}
+
+.pagination__item:nth-last-child(2),
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
+.pagination__item:first-child {
+  float: left;
+  margin-right: 5px;
+}
+
+.pagination__item:last-child {
+  float: right;
+}
+
+.pagination__item:first-child,
+.pagination__item:last-child {
+  margin-top: 0;
 }
 
 .pagination__link {
@@ -1582,27 +1598,10 @@ main {
   opacity: 1;
 }
 
-.pagination__item:first-child {
-  margin-right: auto;
-}
-
-.pagination__item:last-child {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.pagination__item:nth-child(2) {
-  margin-left: 32px;
-}
-
 .pagination__item:first-child .pagination__link,
 .pagination__item:last-child .pagination__link {
   display: inline-block;
   vertical-align: baseline;
-  padding: 27px 29px;
-}
-
-.pagination__item:last-child .pagination__link {
   padding: 27px 30px;
 }
 
@@ -1629,6 +1628,7 @@ main {
 }
 
 .logo-container {
+  float: left;
   margin-top: 5px;
   margin-bottom: 29px;
   width: 163px;
